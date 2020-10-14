@@ -1,6 +1,3 @@
-
-
-
 const theForm = document.querySelector('form');
 const searchText = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
