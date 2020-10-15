@@ -46,11 +46,9 @@ app.get('/weather', (req,res)=>{
 }
   
 })
-
-app.get('/help/*', (req,res)=>{
-  res.render('404',{page:"Help article"});
+app.get('/about',(req,res)=>{
+  res.render('about',{title:"About page",message:"This is a message passed into the template!",name:"Mukhtar"})
 })
- 
 app.get('*', (req,res)=>{
   res.render('404',{page:"Page"});
 })
